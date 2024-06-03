@@ -1,0 +1,478 @@
+/*RESET CSS*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Karla", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*NAVBAR*/
+nav {
+  height: 74px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: 0.3s;
+  background-color: #ffffff;
+}
+nav ul li {
+  display: inline-block;
+}
+ul.menu li {
+  margin-left: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #1b63a6;
+  transition: 0.2s;
+}
+.logo a {
+  /* font-size: 34px; */
+  line-height: 20px;
+}
+.logo a img {
+  width: 150px;
+  height: auto;
+}
+nav a:hover {
+  color: #454d7a;
+}
+.logo {
+  margin-top: -15px;
+}
+/* .logo hr {
+  display: inline-block;
+  width: 15px;
+  margin: 2px;
+}
+.logo span {
+  font-size: 14px;
+  margin-left: 2px;
+} */
+body {
+  height: 2000px;
+}
+/*HEADER*/
+header {
+  height: 100vh;
+  /* background: linear-gradient(to bottom right, #1b63a6, #ebeaea); */
+  background: url("../img/tuna.png") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.judul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0px 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.judul h1 {
+  font-size: 40px;
+  line-height: 50px;
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.judul h1 b {
+  font-weight: bold;
+  font-size: 46px;
+}
+.judul p {
+  font-size: 20px;
+  color: white;
+}
+button {
+  border: none;
+  width: 150px;
+  height: 40px;
+  background: rgb(229, 229, 229);
+  color: #454d7a;
+  font-size: 22px;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #454d7a;
+}
+
+.explore {
+  border: none;
+  width: 170px;
+  height: 40px;
+  background: #e9e9e9;
+  color: #2e2c2c;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 750;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: #1b63a6;
+  color: #e8e8e8;
+}
+
+.fitur {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  padding: 0px 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.fitur img {
+  width: 50px;
+}
+.fitur .kotak {
+  width: 180px;
+  height: 100px;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.kotak p {
+  font-size: 14px;
+  color: white;
+}
+/*ABOUT*/
+section {
+  height: auto;
+  padding: 100px 200px;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+  padding-right: 0;
+  padding-left: 200px;
+}
+.deskripsi {
+  align-content: space-around;
+}
+.gambar {
+  display: flex;
+  justify-content: space-around;
+}
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #215276;
+}
+p {
+  margin: 30px 0;
+  line-height: 26px;
+  font-size: 15px;
+  color: black;
+}
+/*SERVICES*/
+.services {
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.desc {
+  display: inline-block;
+  width: 700px;
+}
+.services-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+.services-card {
+  width: 220px;
+  height: 500px;
+  text-align: left;
+  overflow: hidden;
+}
+.services-card p {
+  height: 150px; /* Set a fixed height for the description */
+}
+.skrol {
+  height: 150px; /* Set a fixed height for the description */
+  overflow-y: scroll;
+  position: relative;
+}
+.services-card img {
+  width: 220px;
+  height: 140px;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #3b3b3b;
+}
+a {
+  color: #1b63a6;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 16px;
+}
+a:hover {
+  color: #215276;
+}
+/*TEAM*/
+
+.team {
+  text-align: center;
+  background-color: #f6fbff;
+  align-items: center;
+  justify-content: center;
+}
+.team img {
+  /* position: relative; */
+  width: 100%;
+}
+
+/*CONTACT*/
+
+.contact {
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background: url(../img/contact.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+form {
+  overflow: hidden;
+  background-color: white;
+  padding: 30px 50px 80px 50px;
+  width: 500px;
+  box-shadow: 0px 0px 15px rgba(1, 1, 1, 0.5);
+}
+label {
+  display: block;
+  margin: 20px 0;
+}
+input,
+textarea {
+  background: #f6f6f6;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+.contact .kiri {
+  width: 300px;
+  text-align: left;
+  margin-top: 30px;
+}
+.contact .kanan {
+  height: 100%;
+}
+.tombol {
+  position: relative;
+  margin: 20px 0;
+}
+.contact button {
+  position: absolute;
+  width: 120px;
+  right: 0;
+}
+.contact h2 {
+  color: #215276;
+}
+/*INTOUCH*/
+.intouch {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 200px;
+  background: #f9f9f9;
+}
+.intouch .kiri {
+  margin-top: 20px;
+  width: 160px;
+}
+.intouch h3 {
+  color: #215276;
+  margin-bottom: 10px;
+}
+.sosmed ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.intouch .logo a {
+  color: #d2d2d2;
+}
+/*FOOTER*/
+footer {
+  padding: 15px 200px;
+  text-align: center;
+  background: #f4f4f4;
+  color: darkgrey;
+  font-size: 15px;
+}
+footer img {
+  width: 12px;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1b63a6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4a4b79;
+}
